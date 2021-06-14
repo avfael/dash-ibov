@@ -36,7 +36,7 @@ def get_retornos(periodo, prices):
     else:
         st.write("Período inválido")
 
-ibov_setor = pd.read_csv("data\ibov_setores.csv", index_col=0)
+ibov_setor = pd.read_csv("data/ibov_setores.csv", index_col=0)
 ibov_setor.set_index('Código', inplace=True)
 ibov_setor.sort_index(inplace=True)
 ibov_setor['ret'] = 0.0
